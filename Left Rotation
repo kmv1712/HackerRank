@@ -1,0 +1,12 @@
+def  leftRotation ( a , n , d ):
+  i =  0
+  для i в  диапазоне ( int (d)):
+    a.insert (n, a [ 0 ])
+    a.pop ( 0 )
+  вернуться
+
+n, d =  input () .strip (). split ( '  ' )
+n, d = [ int (n), int (d)]
+a =  list ( map ( int , input () .strip (). split ( '  ' )))
+result = leftRotation (a, n, d)
+print ( "  " .join ( map ( str , result)))
