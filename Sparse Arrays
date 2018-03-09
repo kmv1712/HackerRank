@@ -1,0 +1,20 @@
+list_string = []
+second_list_string = []
+n = int(input().strip());
+i = 0
+for i in range(n):
+    quest = input().strip();
+    list_string.append(quest)
+#     print (i)
+#     print (list_string)
+
+
+second_n = int(input().strip());
+for i in range(second_n):
+    second_quest = input().strip();
+    second_list_string.append(second_quest)
+
+# result = list(set(second_list_string) & set(list_string)) возращает одинаковые элементы дыух списков
+
+for second_item in second_list_string:
+    print (list_string.count(second_item))
