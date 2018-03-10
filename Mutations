@@ -1,0 +1,5 @@
+def mutate_string(string, position, character):
+    l = list(string) # преобразуем строку в список
+    l[position] = character # подставляем символ на позицию
+    string = ''.join(l)# объеденяем симовлы в списке в строку
+    return string
