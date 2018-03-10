@@ -1,0 +1,5 @@
+def split_and_join(line):
+    list_line = []
+    list_line = line.split(" ")
+    list_line = "-".join(list_line)
+    return (list_line)
