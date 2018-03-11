@@ -1,0 +1,8 @@
+s = input()
+n = []
+s = s.split()
+for item in s:
+    item = item.capitalize()
+    n.append(item)
+print(" ".join(n))
+
